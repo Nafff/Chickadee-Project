@@ -2,19 +2,61 @@
 
 ## Project Name
 
-The name of your project with deployed URL.
+Dungeon and Dragons Dungeon Master Inspiration Page
 
 ## Project Description
 
 Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
 
+This website will provide Dungeon Master's a way to select an environment type from a list and return both a terrain map and a list of enemy types commonly found in that environment. Enemies will be displayed on cards that can be clicked to pop out with additional information about the enemy type pulled from the DnD5e API.
+
 ## API and Data Sample
 
-Specify the API you are using and include a link. Show us a snippet of JSON returned by your API so we know you can access it and get the info you need
+http://www.dnd5eapi.co/docs/#intro
+
+```
+{
+    "ability-scores": "/api/ability-scores",
+    "alignments": "/api/alignments",
+    "backgrounds": "/api/backgrounds",
+    "classes": "/api/classes",
+    "conditions": "/api/conditions",
+    "damage-types": "/api/damage-types",
+    "equipment-categories": "/api/equipment-categories",
+    "equipment": "/api/equipment",
+    "features": "/api/features",
+    "languages": "/api/languages",
+    "magic-items": "/api/magic-items",
+    "magic-schools": "/api/magic-schools",
+    "monsters": "/api/monsters",
+    "proficiencies": "/api/proficiencies",
+    "races": "/api/races",
+    "rules": "/api/rules",
+    "rule-sections": "/api/rule-sections",
+    "skills": "/api/skills",
+    "spells": "/api/spells",
+    "subclasses": "/api/subclasses",
+    "subraces": "/api/subraces",
+    "traits": "/api/traits",
+    "weapon-properties": "/api/weapon-properties"
+}
+```
+
+https://docs.mapbox.com/mapbox-gl-js/api/
+
+```
+/* Mapbox GL JS is Copyright © 2020 Mapbox and subject to the Mapbox Terms of Service ((https://www.mapbox.com/legal/tos/). */
+(function (global, factory) {
+typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
+typeof define === 'function' && define.amd ? define(factory) :
+(global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.mapboxgl = factory());
+```
 
 ## Wireframes
 
 Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
+
+https://whimsical.com/dnd-inspiration-page-616GnujjEgGTRjtmNRe8WV
 
 ### MVP/PostMVP
 
@@ -30,7 +72,7 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 #### PostMVP  
 *These are examples only. Replace with your own Post-MVP features.*
 
-- Add second API
+- Add MapBox API
 - Use local storage to save user favorites
 
 ## Project Schedule
@@ -41,7 +83,7 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|July 30| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
+|July 30| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
 |August 2| Project Approval / Core Application Structure (HTML, CSS, etc.) | Incomplete
 |August 3| Pseudocode / actual code | Incomplete
 |August 4| Initial Clickable Model  | Incomplete
