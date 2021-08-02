@@ -115,7 +115,7 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Create Monster Cards | H | 5hrs| 2.5hrs | 2.5hrs |
 | Advanced Styling w/ Flexbox | H | 3hrs| 2.5hrs | 2.5hrs |
 | Media Queries | H | 3hrs| 2hrs| 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
+| Total | H | 21hrs| 5hrs | 5hrs |
 
 ## Code Snippet
 
