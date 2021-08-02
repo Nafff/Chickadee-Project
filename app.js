@@ -10,3 +10,24 @@ async function getMonsters(monster) {
 }
 
 getMonsters('acolyte')
+
+jungleMonsters = ['tribal-warrior', 'kobold', 'constrictor-snake']
+desertMonsters = ['bandit', 'mummy', 'weretiger']
+grasslandMonsters = ['blood-hawk', 'panther', 'orc']
+forestMonsters = ['awakened-shrub', 'giant-wolf-spider', 'goblin']
+
+jungleMonsters.forEach(monster => {
+  getMonsters(monster)
+});
+
+function chooseEnvironment() {
+  document.querySelector('#environmentButton').addEventListener('click', (e) => {
+    e.preventDefault()
+    const selectEnvironment = document.querySelector('#environment').value
+    // const envrionmentType = document.querySelector('#environment').value.textContent
+    document.querySelector('#test').textContent = selectEnvironment
+    console.log(selectEnvironment)
+  })
+}
+
+chooseEnvironment()
