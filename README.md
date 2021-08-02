@@ -2,11 +2,10 @@
 
 ## Project Name
 
+Dungeonspiration:
 Dungeon and Dragons Dungeon Master Inspiration Page
 
 ## Project Description
-
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
 
 This website will provide Dungeon Master's a way to select an environment type from a list and return both a terrain map and a list of enemy types commonly found in that environment. Enemies will be displayed on cards that can be clicked to pop out with additional information about the enemy type pulled from the DnD5e API.
 
@@ -77,7 +76,7 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 - Add media queries for several levels of responsive design
 - Use local storage to save user favorites
 - Add another page to browse user favorites
-- Add another page to view monsters by various metrics (level, type, location, etc)
+- Add more options for each environment
 
 ## Project Schedule
 
@@ -96,8 +95,6 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 ## Priority Matrix
 
-Include a full list of features that have been prioritized based on the `Time and Importance` Matrix.  Link this image in a similar manner to your wireframes
-
 https://whimsical.com/dungeon-inspiration-priority-matrix-6XyjZhz7JZvbvqJmM4uVD7
 
 ## Timeframes
@@ -108,13 +105,14 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
+| Basic HTML/CSS/JS | H | 1.5hrs| 3.5hrs | 3.5hrs |
+| Setting up APIs | H | 1.5hrs| 2.5hrs | 2.5hrs |
+| Set up Envrionment Arrays | H | 1hrs| 2.5hrs | 2.5hrs |
+| Set up Drop Down Menu | H | 1hrs| 2.5hrs | 2.5hrs |
+| Create Monster Arrays | H | 3hrs| 2.5hrs | 2.5hrs |
+| Add Map Functionality | H | 1.5hrs| 2.5hrs | 2.5hrs |
+| Advanced Styling w/ Flexbox | H | 3hrs| 2.5hrs | 2.5hrs |
+| Media Queries | H | 3hrs| 2hrs| 2.5hrs |
 | Total | H | 6hrs| 5hrs | 5hrs |
 
 ## Code Snippet
