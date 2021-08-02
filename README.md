@@ -15,29 +15,26 @@ http://www.dnd5eapi.co/docs/#intro
 
 ```
 {
-    "ability-scores": "/api/ability-scores",
-    "alignments": "/api/alignments",
-    "backgrounds": "/api/backgrounds",
-    "classes": "/api/classes",
-    "conditions": "/api/conditions",
-    "damage-types": "/api/damage-types",
-    "equipment-categories": "/api/equipment-categories",
-    "equipment": "/api/equipment",
-    "features": "/api/features",
-    "languages": "/api/languages",
-    "magic-items": "/api/magic-items",
-    "magic-schools": "/api/magic-schools",
-    "monsters": "/api/monsters",
-    "proficiencies": "/api/proficiencies",
-    "races": "/api/races",
-    "rules": "/api/rules",
-    "rule-sections": "/api/rule-sections",
-    "skills": "/api/skills",
-    "spells": "/api/spells",
-    "subclasses": "/api/subclasses",
-    "subraces": "/api/subraces",
-    "traits": "/api/traits",
-    "weapon-properties": "/api/weapon-properties"
+{
+    "index": "aboleth",
+    "name": "Aboleth",
+    "size": "Large",
+    "type": "aberration",
+    "subtype": null,
+    "alignment": "lawful evil",
+    "armor_class": 17,
+    "hit_points": 135,
+    "hit_dice": "18d10",
+    "speed": {
+        "walk": "10 ft.",
+        "swim": "40 ft."
+    },
+    "strength": 21,
+    "dexterity": 9,
+    "constitution": 15,
+    "intelligence": 18,
+    "wisdom": 15,
+    "charisma": 18,
 }
 ```
 
@@ -65,14 +62,14 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 *These are examples only. Replace with your own MVP features.*
 
 - Use DnD5e API to pull monster information
-- Use MapBox API to pull map information
 - Use a drop down menu to select from a list of environment types
 - After the user selects an environment, render a map using MapBox from a random array of locations based on the selected environment type
 - After the user selects an environment, return a set of monster "cards" displaying data pulled from the DnD5e API
+- Add media queries for several levels of responsive design
 
 #### PostMVP  
 
-- Add media queries for several levels of responsive design
+- Use MapBox API to pull satelite map information
 - Use local storage to save user favorites
 - Add another page to browse user favorites
 - Add more options for each environment
