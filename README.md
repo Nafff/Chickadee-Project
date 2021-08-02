@@ -53,7 +53,7 @@ typeof define === 'function' && define.amd ? define(factory) :
 
 ## Wireframes
 
-Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
+![alt text](https://res.cloudinary.com/dy6xpqkkj/image/upload/v1627910858/Screen_Shot_2021-08-02_at_9.22.05_AM_cawpiw.png)
 
 https://whimsical.com/dnd-inspiration-page-616GnujjEgGTRjtmNRe8WV
 
@@ -95,6 +95,8 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 ## Priority Matrix
 
+![alt text](https://res.cloudinary.com/dy6xpqkkj/image/upload/v1627910865/Screen_Shot_2021-08-02_at_9.20.54_AM_hibd2j.png)
+
 https://whimsical.com/dungeon-inspiration-priority-matrix-6XyjZhz7JZvbvqJmM4uVD7
 
 ## Timeframes
@@ -110,7 +112,8 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Set up Envrionment Arrays | H | 1hrs| 2.5hrs | 2.5hrs |
 | Set up Drop Down Menu | H | 1hrs| 2.5hrs | 2.5hrs |
 | Create Monster Arrays | H | 3hrs| 2.5hrs | 2.5hrs |
-| Add Map Functionality | H | 1.5hrs| 2.5hrs | 2.5hrs |
+| Add Map Functionality | H | 2hrs| 2.5hrs | 2.5hrs |
+| Create Monster Cards | H | 3hrs| 2.5hrs | 2.5hrs |
 | Advanced Styling w/ Flexbox | H | 3hrs| 2.5hrs | 2.5hrs |
 | Media Queries | H | 3hrs| 2hrs| 2.5hrs |
 | Total | H | 6hrs| 5hrs | 5hrs |
