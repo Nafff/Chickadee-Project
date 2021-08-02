@@ -65,15 +65,19 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 #### MVP 
 *These are examples only. Replace with your own MVP features.*
 
-- Find and use external api 
-- Render data on page 
-- Allow user to choose favorites 
+- Use DnD5e API to pull monster information
+- Use MapBox API to pull map information
+- Use a drop down menu to select from a list of environment types
+- After the user selects an environment, render a map using MapBox from a random array of locations based on the selected environment type
+- After the user selects an environment, return a set of monster "cards" displaying data pulled from the DnD5e API
 
 #### PostMVP  
 *These are examples only. Replace with your own Post-MVP features.*
 
-- Add MapBox API
+- Add media queries for several levels of responsive design
 - Use local storage to save user favorites
+- Add another page to browse user favorites
+- Add another page to view monsters by various metrics (level, type, location, etc)
 
 ## Project Schedule
 
@@ -84,10 +88,10 @@ You are **responsible** for scheduling time with your squad to seek approval for
 |  Day | Deliverable | Status
 |---|---| ---|
 |July 30| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
-|August 2| Project Approval / Core Application Structure (HTML, CSS, etc.) | Incomplete
-|August 3| Pseudocode / actual code | Incomplete
-|August 4| Initial Clickable Model  | Incomplete
-|August 5| MVP | Incomplete
+|August 2| Project Approval / Core Application Structure (HTML, CSS, etc.) / Psuedocode | Incomplete
+|August 3| Coding and setting up API functionality | Incomplete
+|August 4| Initial Clickable Model / CSS Styling | Incomplete
+|August 5| MVP / Finish Styling / Post-MVP| Incomplete
 |August 6| Presentations | Incomplete
 
 ## Priority Matrix
