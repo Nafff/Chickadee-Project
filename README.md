@@ -11,7 +11,7 @@ This website will provide Dungeon Master's a way to select an environment type f
 
 ## API and Data Sample
 
-http://www.dnd5eapi.co/docs/#intro
+https://www.dnd5eapi.co/api/monsters/aboleth
 
 ```
 {
