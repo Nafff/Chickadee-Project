@@ -71,7 +71,6 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 - After the user selects an environment, return a set of monster "cards" displaying data pulled from the DnD5e API
 
 #### PostMVP  
-*These are examples only. Replace with your own Post-MVP features.*
 
 - Add media queries for several levels of responsive design
 - Use local storage to save user favorites
@@ -113,7 +112,7 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Set up Drop Down Menu | H | 1hrs| 2.5hrs | 2.5hrs |
 | Create Monster Arrays | H | 3hrs| 2.5hrs | 2.5hrs |
 | Add Map Functionality | H | 2hrs| 2.5hrs | 2.5hrs |
-| Create Monster Cards | H | 3hrs| 2.5hrs | 2.5hrs |
+| Create Monster Cards | H | 5hrs| 2.5hrs | 2.5hrs |
 | Advanced Styling w/ Flexbox | H | 3hrs| 2.5hrs | 2.5hrs |
 | Media Queries | H | 3hrs| 2hrs| 2.5hrs |
 | Total | H | 6hrs| 5hrs | 5hrs |
