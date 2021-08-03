@@ -39,12 +39,14 @@ async function getMonsters(monster) {
   const url = `https://www.dnd5eapi.co/api/monsters/${monster}`;
   try {
     const data = await axios.get(url);
-    console.log(data.data)
+    console.log(data.data);
     monsterDiv = document.createElement("div");
     monsterDiv.className = "monsterCard";
     monsterDiv.innerText = data.data.name;
     monsterDiv.addEventListener("click", () => {
-      console.log(`Armor Class: ${data.data.armor_class}, Hit Points: ${data.data.hit_points}`);
+      document.querySelector(
+        ".modalText"
+      ).innerText = `Armor Class: ${data.data.armor_class}, Hit Points: ${data.data.hit_points}, Size: ${data.data.size}, Type: ${data.data.type}`;
       document.querySelector(".modal").style.display = "block";
     });
     // test code from W3schools
