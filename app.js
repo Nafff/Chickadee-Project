@@ -35,7 +35,7 @@ document.querySelector("#environmentButton").addEventListener("click", (e) => {
 
 // Run getmonsters on monster list. Append information div inside.
 async function getMonsters(monster) {
-  removeElements(document.querySelector("#monsters"));
+  removeElements(document.querySelector(".monsters"));
   const url = `https://www.dnd5eapi.co/api/monsters/${monster}`;
   try {
     const data = await axios.get(url);
@@ -44,9 +44,24 @@ async function getMonsters(monster) {
     monsterDiv.className = "monsterCard";
     monsterDiv.innerText = data.data.name;
     monsterDiv.addEventListener("click", () => {
-      document.querySelector(
-        ".modalText"
-      ).innerText = `Armor Class: ${data.data.armor_class}, Hit Points: ${data.data.hit_points}, Size: ${data.data.size}, Type: ${data.data.type}`;
+      const cardInfo = `
+      <h3>${data.data.name}</h3>
+      <ul>
+        <li>Armor Class: ${data.data.armor_class}</li>
+        <li>Hit Dice: ${data.data.hit_dice}</li>
+        <li>Hit Points: ${data.data.hit_points}</li>
+        <li>Size: ${data.data.size}<li>
+        <li>Strength: ${data.data.strength}</li>
+        <li>Dexterity: ${data.data.dexterity}</li>
+        <li>Constitution: ${data.data.constitution}</li>
+        <li>Intelligence: ${data.data.intelligence}</li>
+        <li>Wisdom: ${data.data.wisdom}</li>
+        <li>Charisma: ${data.data.charisma}</li>
+        <li>XP: ${data.data.xp}</li>
+      </ul>
+      `;
+      // document.querySelector('.modalText').innerText = `Armor Class: ${data.data.armor_class}, Hit Points: ${data.data.hit_points}, Size: ${data.data.size}, Type: ${data.data.type}`
+      document.querySelector(".modal-content").innerHTML = cardInfo;
       document.querySelector(".modal").style.display = "block";
     });
     // test code from W3schools
@@ -56,7 +71,7 @@ async function getMonsters(monster) {
       }
     };
     // end test code
-    document.querySelector("#monsters").append(monsterDiv);
+    document.querySelector(".monsters").append(monsterDiv);
   } catch (err) {
     console.error(err);
   }

@@ -1,45 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dungeonspiration: DM Inspiration</title>
-  <link rel="stylesheet" href="./style.css">
-  <script defer src="./app.js"></script>
-  <!-- <script defer src="./app2.js"></script> -->
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-</head>
-<body>
-  <header>
-    <h1>Dungeonspiration</h1>
-  </header>
-  <form>
-    <label for="environment">Choose an environment:</label>
-    <select name="environment" id="environment">
-      <option value="Desert">Desert</option>
-      <option value="Jungle">Jungle</option>
-      <option value="Grassland">Grassland</option>
-      <option value="Forest">Forest</option>
-    </select>
-    <button id="environmentButton">Get Inspired!</button>
-  </form>
-  <div id='map'>
-    <p>Map Here</p>
-  </div>
-  <div id='monsters'>
-    <p id='test'>Monsters here</p>
-  </div>
-  <section id='modalSection'>
-    <div id="myModal" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <p class='modalText'>Lorem Ipsum</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dungeonspiration: DM Inspiration</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./app.js"></script>
+    <!-- <script defer src="./app2.js"></script> -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Dungeonspiration</h1>
+    </header>
+    <div class="flexContainer">
+      <form>
+        <label for="environment">Choose an environment:</label>
+        <select name="environment" id="environment">
+          <option value="Desert">Desert</option>
+          <option value="Jungle">Jungle</option>
+          <option value="Grassland">Grassland</option>
+          <option value="Forest">Forest</option>
+        </select>
+        <button id="environmentButton">Get Inspired!</button>
+      </form>
+      <div class="map">
+        <p>Map Here</p>
+        <img
+          src="https://www.mapsinternational.com/pub/media/catalog/product/cache/4d506f310d873d4f29c897e0076bed55/s/a/satellite-map-of-the-world_wm00875.jpg"
+          alt="test image"
+        />
+      </div>
+      <div class="monsters">
+        <p id="test">Monsters here</p>
       </div>
     </div>
-  </section>
-  <footer>
-    <p>Footer here</p>
-  </footer>
-</body>
+    <section id="modalSection">
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <!-- <span class="close">&times;</span> -->
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>Footer here</p>
+    </footer>
+  </body>
 </html>

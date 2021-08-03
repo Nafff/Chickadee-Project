@@ -10,14 +10,55 @@ header {
 
 form {
   border: 1px solid black;
+  /* flexybox testing below */
+  order: -1;
+  flex: 0 1 auto;
+  align-self: flex-start;
 }
 
-#map {
-  border: 1px solid black;
+ul {
+  list-style-type: none;
 }
 
-#monsters {
+img {
+  width: 400px;
+}
+
+.flexContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: center;
+}
+
+.map {
   border: 1px solid black;
+  order: 0;
+  /* flexybox testing below */
+  flex: 1 1 auto;
+  align-self: auto;
+}
+
+.monsters {
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  /* flexybox testing below */
+  order: 0;
+  flex: 1 1 auto;
+  align-self: auto;
+}
+
+.monsterCard {
+  border: 1px solid black;
+  background-color: chartreuse;
+  /* justify-content: space-between;
+  align-items: center; */
+  padding: 50px;
+  flex-basis: 15%;
+  margin: 25px;
 }
 
 footer {
@@ -25,13 +66,6 @@ footer {
   bottom: 0px;
   width: 100%;
   position: absolute;
-}
-
-.monsterCard {
-  border: 1px solid black;
-  background-color: chartreuse;
-  border: 20px;
-  margin: 20px;
 }
 
 /* Modal from W3 schools */
@@ -54,5 +88,6 @@ footer {
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+  width: 30%;
+  border-radius: 10%;
 }
