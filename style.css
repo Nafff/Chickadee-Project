@@ -3,6 +3,8 @@ body {
 }
 
 header {
+  top: 0;
+  background-image: url("https://previews.123rf.com/images/eugenesergeev/eugenesergeev1509/eugenesergeev150900649/46098525-old-gray-stone-wall-seamless-background-photo-texture.jpg");
   background-color: grey;
   text-align: left;
   width: 100%;
@@ -10,10 +12,6 @@ header {
 
 form {
   border: 1px solid black;
-  /* flexybox testing below */
-  order: -1;
-  flex: 0 1 auto;
-  align-self: flex-start;
 }
 
 ul {
@@ -25,6 +23,7 @@ img {
 }
 
 .flexContainer {
+  margin-top: 150px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -33,32 +32,36 @@ img {
   align-items: center;
 }
 
-.map {
-  border: 1px solid black;
+.formMapContainer {
   order: 0;
-  /* flexybox testing below */
   flex: 1 1 auto;
   align-self: auto;
+}
+
+.monsterContainer {
+  order: 0;
+  flex: 1 1 auto;
+  align-self: auto;
+}
+
+.map {
+  border: 1px solid black;
 }
 
 .monsters {
   border: 1px solid black;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  /* flexybox testing below */
-  order: 0;
-  flex: 1 1 auto;
-  align-self: auto;
 }
 
 .monsterCard {
   border: 1px solid black;
   background-color: chartreuse;
-  /* justify-content: space-between;
-  align-items: center; */
-  padding: 50px;
-  flex-basis: 15%;
+  padding: 30px;
+  flex-basis: 25%;
   margin: 25px;
+  flex-wrap: wrap;
 }
 
 footer {

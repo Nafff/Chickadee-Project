@@ -1,7 +1,7 @@
-jungleMonsters = ["tribal-warrior", "kobold", "constrictor-snake"];
-desertMonsters = ["bandit", "mummy", "weretiger-tiger"];
-grasslandMonsters = ["blood-hawk", "panther", "orc"];
-forestMonsters = ["awakened-shrub", "giant-wolf-spider", "goblin"];
+jungleMonsters = ["tribal-warrior", "kobold", "constrictor-snake", "giant-boar"];
+desertMonsters = ["bandit", "mummy", "weretiger-tiger", "giant-vulture"];
+grasslandMonsters = ["blood-hawk", "panther", "orc", "bugbear"];
+forestMonsters = ["awakened-shrub", "giant-wolf-spider", "goblin", "centaur"];
 
 function removeElements(element) {
   while (element.lastChild) {
