@@ -9,10 +9,19 @@
     <script defer src="./app.js"></script>
     <!-- <script defer src="./app2.js"></script> -->
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
+      <div class="torchOne">
+        <img src="https://opengameart.org/sites/default/files/Torch_Gif.gif" alt="test gif">
+      </div>
       <h1>Dungeonspiration</h1>
+      <div class="torchTwo">
+        <img src="https://opengameart.org/sites/default/files/Torch_Gif.gif" alt="test gif">
+      </div>
     </header>
     <div class="flexContainer">
       <div class="formMapContainer">
@@ -24,13 +33,13 @@
             <option value="Grassland">Grassland</option>
             <option value="Forest">Forest</option>
           </select>
-          <button id="environmentButton">Get Inspired!</button>
+          <button id="environmentButton">Get Inspired</button>
         </form>
         <div class="map">
           <p>Map Here</p>
           <img
             src="https://www.mapsinternational.com/pub/media/catalog/product/cache/4d506f310d873d4f29c897e0076bed55/s/a/satellite-map-of-the-world_wm00875.jpg"
-            alt="test image"
+            alt="test image" class="testImage"
           />
         </div>
       </div>

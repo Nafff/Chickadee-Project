@@ -1,24 +1,54 @@
 body {
   text-align: center;
+  background-color: rgb(156, 173, 188);
 }
 
 header {
   top: 0;
-  background-image: url("https://previews.123rf.com/images/eugenesergeev/eugenesergeev1509/eugenesergeev150900649/46098525-old-gray-stone-wall-seamless-background-photo-texture.jpg");
+  background-image: url("https://res.cloudinary.com/dy6xpqkkj/image/upload/v1628019942/Screen_Shot_2021-08-03_at_3.44.40_PM_ncs8k8.png");
+  background-size: contain;
   background-color: grey;
   text-align: left;
   width: 100%;
+  padding: 15px;
+  color: white;
+  font-family: 'MedievalSharp', cursive;
+}
+
+img {
+  width: 55px;
 }
 
 form {
   border: 1px solid black;
+  margin-bottom: 10px;
+  font-family: 'MedievalSharp', cursive;
+  font-size: 18px;
+}
+
+#environment {
+  font-family: 'MedievalSharp', cursive;
+  background-color: #2A5774;
+  color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+}
+
+#environmentButton {
+  font-family: 'MedievalSharp', cursive;
+  background-color: #2A5774;
+  color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
 }
 
 ul {
   list-style-type: none;
 }
 
-img {
+.testImage {
   width: 400px;
 }
 
@@ -30,17 +60,22 @@ img {
   justify-content: center;
   align-content: stretch;
   align-items: center;
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url("https://res.cloudinary.com/dy6xpqkkj/image/upload/v1628019942/Screen_Shot_2021-08-03_at_3.44.40_PM_ncs8k8.png") 100 round;
 }
 
 .formMapContainer {
   order: 0;
-  flex: 1 1 auto;
+  /* flex: 1 1 auto; */
+  flex: 1 1 50%;
   align-self: auto;
 }
 
 .monsterContainer {
   order: 0;
-  flex: 1 1 auto;
+  /* flex: 1 1 auto; */
+  flex: 1 1 50%;
   align-self: auto;
 }
 
@@ -56,15 +91,22 @@ img {
 }
 
 .monsterCard {
-  border: 1px solid black;
+  border: 5px solid black;
   background-color: chartreuse;
   padding: 30px;
   flex-basis: 25%;
   margin: 25px;
   flex-wrap: wrap;
+  height: 50px;
+  /* testing card */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
 }
 
 footer {
+  background-image: url("https://res.cloudinary.com/dy6xpqkkj/image/upload/v1628048236/Screen_Shot_2021-08-03_at_11.36.14_PM_wvndgl.png");
+  background-size: contain;
   background-color: grey;
   bottom: 0px;
   width: 100%;
