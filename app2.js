@@ -23,11 +23,6 @@ forestMonsters = {
   "centaur": `<img src="https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/227/405/315/636252765573266420.jpeg" alt=""></img>`
 };
 
-desertMaps = ['11.288452', '23.806078']
-jungleMap = ['-3.465305', '-62.215881']
-grasslandMap = ['-27.529991', '150.582068']
-forestMap = ['37.865101', '-119.538330']
-
 function removeElements(element) {
   while (element.lastChild) {
     element.removeChild(element.lastChild);
@@ -42,27 +37,23 @@ document.querySelector("#environmentButton").addEventListener("click", (e) => {
   if (selectEnvironment === "Desert") {
     for (const [monster, image] of Object.entries(desertMonsters)) {
       getMonsters(monster, image);
-      createMap(desertMaps[0], desertMaps[1])
     };
   } else if (selectEnvironment === "Jungle") {
     if (selectEnvironment === "Jungle") {
       for (const [monster, image] of Object.entries(jungleMonsters)) {
         getMonsters(monster, image);
-        createMap(jungleMap[0], jungleMap[1])
       };
     }
   } else if (selectEnvironment === "Grassland") {
     if (selectEnvironment === "Grassland") {
       for (const [monster, image] of Object.entries(grasslandMonsters)) {
         getMonsters(monster, image);
-        createMap(grasslandMap[0], grasslandMap[1])
       };
     }
   } else if (selectEnvironment === "Forest") {
     if (selectEnvironment === "Forest") {
       for (const [monster, image] of Object.entries(forestMonsters)) {
         getMonsters(monster, image);
-        createMap(forestMap[0], forestMap[1])
       };
     }
   }
@@ -111,39 +102,4 @@ async function getMonsters(monster, image) {
   } catch (err) {
     console.error(err);
   } 
-}
-
-// Map Test Code
-function createMap(lat, long) {
-  mapboxgl.accessToken = 'pk.eyJ1IjoiY296aWVyIiwiYSI6ImNrcnRyZXVyajE3YTYycG85N3g1dnZ0MTUifQ.w_Rsxac2Up_pymg5wQ1TnQ';
-    var map = new mapboxgl.Map({
-    container: 'map', // container ID
-    style: 'mapbox://styles/mapbox-map-design/ckhqrf2tz0dt119ny6azh975y', // style URL
-    pitch: 75,
-    bearing: 80,
-    center: [long, lat], // starting position [lng, lat]
-    zoom: 14 // starting zoom
-    
-    });
-  map.on('load', function () {
-    map.addSource('mapbox-dem', {
-    'type': 'raster-dem',
-    'url': 'mapbox://mapbox.mapbox-terrain-dem-v1',
-    'tileSize': 512,
-    'maxzoom': 14
-    });
-    // add the DEM source as a terrain layer with exaggerated height
-    map.setTerrain({ 'source': 'mapbox-dem', 'exaggeration': 1.5 });
-      
-    // add a sky layer that will show when the map is highly pitched
-    map.addLayer({
-    'id': 'sky',
-    'type': 'sky',
-    'paint': {
-    'sky-type': 'atmosphere',
-    'sky-atmosphere-sun': [0.0, 0.0],
-    'sky-atmosphere-sun-intensity': 15
-    }
-    });
-    });
 }
