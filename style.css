@@ -134,7 +134,7 @@ footer {
   background-color: grey;
   width: 100vw;
   position: absolute;
-  bottom: 0;
+  /* bottom: 0; */
   /* margin-bottom: -25px; */
   right: 0;
 }
@@ -168,4 +168,8 @@ footer {
 
 #modalList {
   padding-right: 30px;
+}
+
+.leftSprite {
+  null
 }

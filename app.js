@@ -77,9 +77,16 @@ async function getMonsters(monster, image) {
     console.log(data.data);
     monsterDiv = document.createElement("div");
     monsterDiv.className = "monsterCard";
+    monsterTextDiv = document.createElement("div")
+    monsterTextDiv.className = "monsterTextDiv"
+    monsterImageDiv = document.createElement("div")
+    monsterImageDiv.className = "monsterImageDiv"
     // testing inner text span changes
-    monsterDiv.innerHTML = `<span class="nameSpan">${data.data.name}</span>`;
-    monsterDiv.insertAdjacentHTML('afterbegin', `<img class="monsterCardImg" src=${image} alt=${data.data.name} image"></img>`)
+    // monsterDiv.innerHTML = `<span class="nameSpan">${data.data.name}</span>`;
+    monsterTextDiv.innerHTML = `<p>${data.data.name}</p>`
+    monsterImageDiv.innerHTML = `<img class="monsterCardImg" src=${image} alt=${data.data.name} image"></img>`
+    monsterDiv.appendChild(monsterImageDiv)
+    monsterDiv.appendChild(monsterTextDiv)
     monsterDiv.addEventListener("click", () => {
       const cardInfo = `
       <h3>${data.data.name}</h3>
