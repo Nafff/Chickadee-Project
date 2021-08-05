@@ -19,17 +19,17 @@ header {
 
 .introText {
   margin-top: 200px;
-  text-align: left;
+  text-align: center;
   color: #394955;
   font-family: 'MedievalSharp', cursive;
 }
 
-img {
+.torchImg {
   width: 55px;
 }
 
 form {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   margin-bottom: 10px;
   font-family: 'MedievalSharp', cursive;
   font-size: 18px;
@@ -89,13 +89,13 @@ ul {
 }
 
 .map {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   /* max-width: 100%; */
   border-radius: 3%;
 }
 
 .monsters {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -106,7 +106,7 @@ ul {
   background-color: #2A5774;
   color: white;
   font-family: 'MedievalSharp', cursive;
-  padding: 100px 15px 100px 15px;
+  padding: 10px 15px 190px 15px;
   /* Playing around with flex (aiming to keep item same size) */
   /* flex: 0 0 25%; */
   margin: 25px;
@@ -118,6 +118,16 @@ ul {
   border-radius: 5px;
 }
 
+/* .nameSpan {
+ bottom: 0px;
+} */
+
+.monsterCardImg {
+  width: 100%;
+  border-radius: 5%;
+  top: 0;
+}
+
 footer {
   background-image: url("https://res.cloudinary.com/dy6xpqkkj/image/upload/v1628048236/Screen_Shot_2021-08-03_at_11.36.14_PM_wvndgl.png");
   background-size: contain;
@@ -125,7 +135,7 @@ footer {
   width: 100vw;
   position: absolute;
   bottom: 0;
-  margin-bottom: -25px;
+  /* margin-bottom: -25px; */
   right: 0;
 }
 
@@ -154,4 +164,8 @@ footer {
   /* styling below */
   background-color: #2A5774;
   color: white;
+}
+
+#modalList {
+  padding-right: 30px;
 }
