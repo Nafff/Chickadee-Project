@@ -9,11 +9,18 @@ header {
   background-image: url("https://res.cloudinary.com/dy6xpqkkj/image/upload/v1628019942/Screen_Shot_2021-08-03_at_3.44.40_PM_ncs8k8.png");
   background-size: contain;
   background-color: grey;
-  text-align: left;
   width: 100vw;
+  height: 200px;
   /* padding: 15px; */
   margin-right: 0;
-  color: white;
+  margin-top: 0;
+  position: absolute;
+}
+
+.introText {
+  margin-top: 200px;
+  text-align: left;
+  color: #394955;
   font-family: 'MedievalSharp', cursive;
 }
 
@@ -55,7 +62,7 @@ ul {
 }
 
 .flexContainer {
-  margin: 150px 45px 0px 45px;
+  margin: 50px 45px 0px 45px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -138,10 +145,13 @@ footer {
 
 /* Modal Content/Box from W3 schools */
 .modal-content {
-  background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
+  /* background-color: #fefefe; */
+  margin: 25% auto; /* 25% from the top and centered */
   padding: 20px;
-  border: 1px solid #888;
+  border: 10px solid black;
   width: 30%;
   border-radius: 10%;
+  /* styling below */
+  background-color: #2A5774;
+  color: white;
 }

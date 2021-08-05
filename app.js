@@ -1,26 +1,42 @@
 jungleMonsters = {
-  "tribal-warrior": `<img src="https://media-waterdeep.cursecdn.com/attachments/2/656/humanoid.jpg" alt=""></img>`,
-  "kobold": `<img src="https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/379/233/315/636252780450300625.jpeg" alt=""></img>`,
-  "constrictor-snake": `<img src="https://media-waterdeep.cursecdn.com/attachments/2/648/beast.jpg" alt=""></img>`,
-  "giant-boar": `<img src="https://media-waterdeep.cursecdn.com/attachments/2/648/beast.jpg" alt=""></img>`
+  // "tribal-warrior": `<img src="https://media-waterdeep.cursecdn.com/attachments/2/656/humanoid.jpg" alt=""></img>`,
+  // "kobold": `<img src="https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/379/233/315/636252780450300625.jpeg" alt=""></img>`,
+  // "constrictor-snake": `<img src="https://media-waterdeep.cursecdn.com/attachments/2/648/beast.jpg" alt=""></img>`,
+  // "giant-boar": `<img src="https://media-waterdeep.cursecdn.com/attachments/2/648/beast.jpg" alt=""></img>`
+  "tribal-warrior": "https://media-waterdeep.cursecdn.com/attachments/2/656/humanoid.jpg",
+  "kobold": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/379/233/315/636252780450300625.jpeg",
+  "constrictor-snake": "https://media-waterdeep.cursecdn.com/attachments/2/648/beast.jpg",
+  "giant-boar": "https://media-waterdeep.cursecdn.com/attachments/2/648/beast.jpg"
 };
 desertMonsters = {
-  "bandit": `<img src="https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/181/259/315/636252761965117015.jpeg" alt=""></img>`,
-  "mummy": `<img src="https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/225/201/315/636252765553048566.jpeg" alt=""></img>`,
-  "weretiger-tiger": `<img src="https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/76/255/315/636252734783831163.jpeg" alt=""></img>`,
-  "giant-vulture": `<img src="https://media-waterdeep.cursecdn.com/attachments/2/648/beast.jpg" alt=""></img>`
+  // "bandit": `<img src="https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/181/259/315/636252761965117015.jpeg" alt=""></img>`,
+  // "mummy": `<img src="https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/225/201/315/636252765553048566.jpeg" alt=""></img>`,
+  // "weretiger-tiger": `<img src="https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/76/255/315/636252734783831163.jpeg" alt=""></img>`,
+  // "giant-vulture": `<img src="https://media-waterdeep.cursecdn.com/attachments/2/648/beast.jpg" alt=""></img>`
+  "bandit": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/181/259/315/636252761965117015.jpeg",
+  "mummy": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/225/201/315/636252765553048566.jpeg",
+  "weretiger-tiger": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/76/255/315/636252734783831163.jpeg",
+  "giant-vulture": "https://media-waterdeep.cursecdn.com/attachments/2/648/beast.jpg"
 };
 grasslandMonsters = {
-  "blood-hawk": `<img src="https://media-waterdeep.cursecdn.com/attachments/2/648/beast.jpg" alt=""></img>`,
-  "panther": `<img src="https://media-waterdeep.cursecdn.com/attachments/2/648/beast.jpg" alt=""></img>`,
-  "orc": `<img src="https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/301/256/315/636252771691385727.jpeg" alt=""></img>`,
-  "bugbear": `<img src="https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/221/255/315/636252765234633232.jpeg" alt=""></img>`
+  // "blood-hawk": `<img src="https://media-waterdeep.cursecdn.com/attachments/2/648/beast.jpg" alt=""></img>`,
+  // "panther": `<img src="https://media-waterdeep.cursecdn.com/attachments/2/648/beast.jpg" alt=""></img>`,
+  // "orc": `<img src="https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/301/256/315/636252771691385727.jpeg" alt=""></img>`,
+  // "bugbear": `<img src="https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/221/255/315/636252765234633232.jpeg" alt=""></img>`
+  "blood-hawk": "https://media-waterdeep.cursecdn.com/attachments/2/648/beast.jpg",
+  "panther": "https://media-waterdeep.cursecdn.com/attachments/2/648/beast.jpg",
+  "orc": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/301/256/315/636252771691385727.jpeg",
+  "bugbear": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/221/255/315/636252765234633232.jpeg"
 };
 forestMonsters = {
-  "awakened-shrub": `<img src="https://media-waterdeep.cursecdn.com/attachments/2/659/plant.jpg" alt=""></img>`,
-  "giant-wolf-spider": `<img src="https://media-waterdeep.cursecdn.com/attachments/2/648/beast.jpg" alt=""></img>`,
-  "goblin": `<img src="https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/351/218/315/636252777818652432.jpeg" alt=""></img>`,
-  "centaur": `<img src="https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/227/405/315/636252765573266420.jpeg" alt=""></img>`
+  // "awakened-shrub": `<img src="https://media-waterdeep.cursecdn.com/attachments/2/659/plant.jpg" alt=""></img>`,
+  // "giant-wolf-spider": `<img src="https://media-waterdeep.cursecdn.com/attachments/2/648/beast.jpg" alt=""></img>`,
+  // "goblin": `<img src="https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/351/218/315/636252777818652432.jpeg" alt=""></img>`,
+  // "centaur": `<img src="https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/227/405/315/636252765573266420.jpeg" alt=""></img>`
+  "awakened-shrub": "https://media-waterdeep.cursecdn.com/attachments/2/659/plant.jpg",
+  "giant-wolf-spider": "https://media-waterdeep.cursecdn.com/attachments/2/648/beast.jpg",
+  "goblin": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/351/218/315/636252777818652432.jpeg",
+  "centaur": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/227/405/315/636252765573266420.jpeg"
 };
 
 desertMaps = ['11.288452', '23.806078']
@@ -78,7 +94,7 @@ async function getMonsters(monster, image) {
     monsterDiv = document.createElement("div");
     monsterDiv.className = "monsterCard";
     monsterDiv.innerText = data.data.name;
-    monsterDiv.insertAdjacentHTML('afterbegin', image)
+    monsterDiv.insertAdjacentHTML('afterbegin', `<img src=${image} alt=${data.data.name} image"></img>`)
     monsterDiv.addEventListener("click", () => {
       const cardInfo = `
       <h3>${data.data.name}</h3>
