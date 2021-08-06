@@ -254,7 +254,168 @@ footer {
   width: 40px;
 }
 
-@media screen and (max-width: 320px) {
+@media only screen and (max-width: 1200px) {
+  .flexContainer {
+    margin: 10px 5px 0px 5px;
+    padding: 35px;
+  }
+  .monsterCard {
+    margin: 5px;
+    width: 25%;
+  }
+  .monsterPlaceholderCard {
+    margin: 5px;
+    width: 25%;
+  }
+  .leftSprite img {
+    padding-top: 140px;
+    margin-right: 60px;
+  }
+  .middleSprite {
+    padding-right: 60px;
+    padding-top: 270px;
+  }
+  .rightSprite img {
+    padding-top: 165px;
+    margin-right: 45px;
+  }
+  .modal-content {
+    margin: 50% auto;
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  .flexContainer {
+    margin: 10px 5px 0px 5px;
+    padding: 35px;
+  }
+  .monsterCard {
+    margin: 5px;
+    width: 25%;
+  }
+  .monsterPlaceholderCard {
+    margin: 5px;
+    width: 25%;
+  }
+  .leftSprite img {
+    padding-top: 140px;
+    margin-right: 60px;
+  }
+  .middleSprite {
+    padding-right: 60px;
+    padding-top: 270px;
+  }
+  .rightSprite img {
+    padding-top: 165px;
+    margin-right: 45px;
+  }
+  .modal-content {
+    margin: 50% auto;
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  header {
+    height: 100px;
+  }
+  .introText {
+    margin-top: 60px;
+    font-size: 16px;
+  }
+  .flexContainer {
+    margin: 10px 5px 0px 5px;
+    padding: 35px;
+  }
+  .map {
+    height: 280px;
+  }
+  .monsterCard {
+    margin: 5px;
+    width: 40%;
+  }
+  .monsterPlaceholderCard {
+    margin: 5px;
+    width: 40%;
+  }
+  .spriteDiv {
+    grid-gap: 0px;
+  }
+  .leftSprite img {
+    height: 100px;
+    padding-top: 80px;
+  }
+  .middleSprite {
+    height: 70px;
+    padding-right: 20px;
+  }
+  .spriteTwo {
+    display: none;
+  }
+  .spriteThree {
+    display: none;
+  }
+  .rightSprite img {
+    height: 70px;
+    padding-right: 50px;
+  }
+  .modal-content {
+    margin: 50% auto;
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    height: 100px;
+  }
+  .introText {
+    margin-top: 60px;
+    font-size: 16px;
+  }
+  .flexContainer {
+    margin: 10px 5px 0px 5px;
+    padding: 10px;
+  }
+  .map {
+    height: 280px;
+  }
+  .monsterCard {
+    margin: 5px;
+    width: 40%;
+  }
+  .monsterPlaceholderCard {
+    margin: 5px;
+    width: 40%;
+  }
+  .spriteDiv {
+    grid-gap: 0px;
+  }
+  .leftSprite img {
+    height: 100px;
+    padding-top: 80px;
+  }
+  .middleSprite {
+    height: 70px;
+    padding-right: 20px;
+  }
+  .spriteTwo {
+    display: none;
+  }
+  .spriteThree {
+    display: none;
+  }
+  .rightSprite img {
+    height: 70px;
+    padding-right: 50px;
+  }
+  .modal-content {
+    margin: 50% auto;
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
   header {
     height: 100px;
   }
@@ -306,165 +467,3 @@ footer {
     width: 80%;
   }
 }
-
-@media screen and (max-width: 600px) {
-  header {
-    height: 100px;
-  }
-  .introText {
-    margin-top: 60px;
-    font-size: 16px;
-  }
-  .flexContainer {
-    margin: 10px 5px 0px 5px;
-    padding: 10px;
-  }
-  .map {
-    height: 280px;
-  }
-  .monsterCard {
-    margin: 5px;
-    width: 40%;
-  }
-  .monsterPlaceholderCard {
-    margin: 5px;
-    width: 40%;
-  }
-  .spriteDiv {
-    grid-gap: 0px;
-  }
-  .leftSprite img {
-    height: 100px;
-    padding-top: 80px;
-  }
-  .middleSprite {
-    height: 70px;
-    padding-right: 20px;
-  }
-  .spriteTwo {
-    display: none;
-  }
-  .spriteThree {
-    display: none;
-  }
-  .rightSprite img {
-    height: 70px;
-    padding-right: 50px;
-  }
-  .modal-content {
-    margin: 50% auto;
-    width: 80%;
-  }
-}
-
-/* @media screen and (max-width: 900px) {
-  header {
-    height: 100px;
-  }
-  .introText {
-    margin-top: 60px;
-    font-size: 16px;
-  }
-  .flexContainer {
-    margin: 10px 5px 0px 5px;
-    padding: 35px;
-  }
-  .map {
-    height: 280px;
-  }
-  .monsterCard {
-    margin: 5px;
-    width: 40%;
-  }
-  .monsterPlaceholderCard {
-    margin: 5px;
-    width: 40%;
-  }
-  .spriteDiv {
-    grid-gap: 0px;
-  }
-  .leftSprite img {
-    height: 100px;
-    padding-top: 80px;
-  }
-  .middleSprite {
-    height: 70px;
-    padding-right: 20px;
-  }
-  .spriteTwo {
-    display: none;
-  }
-  .spriteThree {
-    display: none;
-  }
-  .rightSprite img {
-    height: 70px;
-    padding-right: 50px;
-  }
-  .modal-content {
-    margin: 50% auto;
-    width: 80%;
-  }
-}
-
-@media screen and (max-width: 1025px) {
-  .flexContainer {
-    margin: 10px 5px 0px 5px;
-    padding: 35px;
-  }
-  .monsterCard {
-    margin: 5px;
-    width: 25%;
-  }
-  .monsterPlaceholderCard {
-    margin: 5px;
-    width: 25%;
-  }
-  .leftSprite img {
-    padding-top: 140px;
-    margin-right: 60px;
-  }
-  .middleSprite {
-    padding-right: 60px;
-    padding-top: 270px;
-  }
-  .rightSprite img {
-    padding-top: 165px;
-    margin-right: 45px;
-  }
-  .modal-content {
-    margin: 50% auto;
-    width: 80%;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .flexContainer {
-    margin: 10px 5px 0px 5px;
-    padding: 35px;
-  }
-  .monsterCard {
-    margin: 5px;
-    width: 25%;
-  }
-  .monsterPlaceholderCard {
-    margin: 5px;
-    width: 25%;
-  }
-  .leftSprite img {
-    padding-top: 140px;
-    margin-right: 60px;
-  }
-  .middleSprite {
-    padding-right: 60px;
-    padding-top: 270px;
-  }
-  .rightSprite img {
-    padding-top: 165px;
-    margin-right: 45px;
-  }
-  .modal-content {
-    margin: 50% auto;
-    width: 80%;
-  }
-} */
