@@ -158,6 +158,9 @@ async function getMonsters(monster, image) {
 ```
 
 ## Change Log
+
+|  Day | Changes
+|---|---|
 |August 2| Added base HTML and linked DnD5e API
 |August 2| Added initial API functionality
 |August 2| Started basic styling
