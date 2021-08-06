@@ -54,12 +54,7 @@ typeof define === 'function' && define.amd ? define(factory) :
 
 https://whimsical.com/dnd-inspiration-page-616GnujjEgGTRjtmNRe8WV
 
-### MVP/PostMVP
-
-The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
-
 #### MVP 
-*These are examples only. Replace with your own MVP features.*
 
 - Use DnD5e API to pull monster information
 - Use a drop down menu to select from a list of environment types
@@ -75,10 +70,6 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 - Add more options for each environment
 
 ## Project Schedule
-
-This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
-
-You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
 
 |  Day | Deliverable | Status
 |---|---| ---|
@@ -97,30 +88,70 @@ https://whimsical.com/dungeon-inspiration-priority-matrix-6XyjZhz7JZvbvqJmM4uVD7
 
 ## Timeframes
 
-Tell us how long you anticipate spending on each area of development. Be sure to consider how many hours a day you plan to be coding and how many days you have available until presentation day.
-
-Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Throughout your project, keep track of your Time Invested and Actual Time and update your README regularly.
-
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Basic HTML/CSS/JS | H | 1.5hrs| 3.5hrs | 3.5hrs |
-| Setting up APIs | H | 1.5hrs| 2.5hrs | 2.5hrs |
-| Set up Envrionment Arrays | H | 1hrs| 2.5hrs | 2.5hrs |
-| Set up Drop Down Menu | H | 1hrs| 2.5hrs | 2.5hrs |
-| Create Monster Arrays | H | 3hrs| 2.5hrs | 2.5hrs |
-| Add Map Functionality | H | 2hrs| 2.5hrs | 2.5hrs |
-| Create Monster Cards | H | 5hrs| 2.5hrs | 2.5hrs |
-| Advanced Styling w/ Flexbox | H | 3hrs| 2.5hrs | 2.5hrs |
-| Media Queries | H | 3hrs| 2hrs| 2.5hrs |
-| Total | H | 21hrs| 5hrs | 5hrs |
+| Basic HTML/CSS/JS | H | 1.5hrs| 1hrs | 1hrs |
+| Setting up APIs | H | 1.5hrs| 2hrs | 2hrs |
+| Set up Envrionment Arrays | H | 1hrs| 1hrs | 1hrs |
+| Set up Drop Down Menu | H | 1hrs| 1hrs | 1hrs |
+| Create Monster Arrays | H | 3hrs| 2hrs | 2hrs |
+| Add Map Functionality | H | 2hrs| 3hrs | 3hrs |
+| Create Monster Cards | H | 5hrs| 7hrs | 7hrs |
+| Advanced Styling | H | 6hrs| 9hrs | 9hrs |
+| FlexBox | H | 6hrs| 6hrs | 6hrs |
+| Media Queries | H | 4hrs| 5hrs| 5hrs |
+| Total | H | 36hrs| 42hrs | 5hrs |
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of and a brief description.  
+getMonsters() accesses the DnD5e API, creates all of my monster card elements in the DOM, appends the appropraite information and images to the cards, and adds modal window functionality to the card.
 
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
+async function getMonsters(monster, image) {
+  removeElements(document.querySelector(".monsters"));
+  const url = `https://www.dnd5eapi.co/api/monsters/${monster}`;
+  try {
+    const data = await axios.get(url);
+    console.log(data.data);
+    monsterDiv = document.createElement("div");
+    monsterDiv.className = "monsterCard";
+    monsterTextDiv = document.createElement("div")
+    monsterTextDiv.className = "monsterTextDiv"
+    monsterImageDiv = document.createElement("div")
+    monsterImageDiv.className = "monsterImageDiv"
+    monsterTextDiv.innerHTML = `<p class="monsterP">${data.data.name}</p>`
+    monsterImageDiv.innerHTML = `<img class="monsterCardImg" src=${image} alt=${data.data.name} image"></img>`
+    monsterDiv.appendChild(monsterImageDiv)
+    monsterDiv.appendChild(monsterTextDiv)
+    monsterDiv.addEventListener("click", () => {
+      const cardInfo = `
+      <h3>${data.data.name}</h3>
+      <ul id='modalList'>
+        <li>Armor Class: ${data.data.armor_class}</li>
+        <li>Hit Dice: ${data.data.hit_dice}</li>
+        <li>Hit Points: ${data.data.hit_points}</li>
+        <li>Size: ${data.data.size}<li>
+        <li>Strength: ${data.data.strength}</li>
+        <li>Dexterity: ${data.data.dexterity}</li>
+        <li>Constitution: ${data.data.constitution}</li>
+        <li>Intelligence: ${data.data.intelligence}</li>
+        <li>Wisdom: ${data.data.wisdom}</li>
+        <li>Charisma: ${data.data.charisma}</li>
+        <li>XP: ${data.data.xp}</li>
+      </ul>
+      `;
+      document.querySelector(".modal-content").innerHTML = cardInfo;
+      document.querySelector(".modal").style.display = "block";
+    });
+    window.onclick = function (event) {
+      if (event.target == document.querySelector(".modal")) {
+        document.querySelector(".modal").style.display = "none";
+      }
+    };
+    document.querySelector(".monsters").append(monsterDiv);
+  } catch (err) {
+    console.error(err);
+  } 
 }
 ```
 
