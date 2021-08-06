@@ -147,7 +147,23 @@ ul {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 5px;
+}
 
+.monsterPlaceholderCard {
+  border: 5px solid black;
+  background-color: #2A5774;
+  color: white;
+  font-family: 'MedievalSharp', cursive;
+  /* padding: 10px 15px 190px 15px; */
+  /* Playing around with flex (aiming to keep item same size) */
+  /* flex: 0 0 25%; */
+  margin: 25px;
+  flex-wrap: wrap;
+  height: 200px;
+  width: 20%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
 }
 
 .monsterImageDiv{
