@@ -42,7 +42,6 @@ function removeElements(element) {
   }
 }
 
-// Get value from drop down menu
 document.querySelector("#environmentButton").addEventListener("click", (e) => {
   e.preventDefault();
   monsterDiv = document.createElement("div");
@@ -76,7 +75,6 @@ document.querySelector("#environmentButton").addEventListener("click", (e) => {
   }
 });
 
-// Run getmonsters on monster list. Append information div inside.
 async function getMonsters(monster, image) {
   removeElements(document.querySelector(".monsters"));
   const url = `https://www.dnd5eapi.co/api/monsters/${monster}`;
@@ -89,8 +87,6 @@ async function getMonsters(monster, image) {
     monsterTextDiv.className = "monsterTextDiv"
     monsterImageDiv = document.createElement("div")
     monsterImageDiv.className = "monsterImageDiv"
-    // testing inner text span changes
-    // monsterDiv.innerHTML = `<span class="nameSpan">${data.data.name}</span>`;
     monsterTextDiv.innerHTML = `<p class="monsterP">${data.data.name}</p>`
     monsterImageDiv.innerHTML = `<img class="monsterCardImg" src=${image} alt=${data.data.name} image"></img>`
     monsterDiv.appendChild(monsterImageDiv)
@@ -112,33 +108,29 @@ async function getMonsters(monster, image) {
         <li>XP: ${data.data.xp}</li>
       </ul>
       `;
-      // document.querySelector('.modalText').innerText = `Armor Class: ${data.data.armor_class}, Hit Points: ${data.data.hit_points}, Size: ${data.data.size}, Type: ${data.data.type}`
       document.querySelector(".modal-content").innerHTML = cardInfo;
       document.querySelector(".modal").style.display = "block";
     });
-    // test code from W3schools
     window.onclick = function (event) {
       if (event.target == document.querySelector(".modal")) {
         document.querySelector(".modal").style.display = "none";
       }
     };
-    // end test code
     document.querySelector(".monsters").append(monsterDiv);
   } catch (err) {
     console.error(err);
   } 
 }
 
-// Map Test Code
 function createMap(lat, long) {
   mapboxgl.accessToken = 'pk.eyJ1IjoiY296aWVyIiwiYSI6ImNrcnRyZXVyajE3YTYycG85N3g1dnZ0MTUifQ.w_Rsxac2Up_pymg5wQ1TnQ';
     var map = new mapboxgl.Map({
-    container: 'map', // container ID
-    style: 'mapbox://styles/mapbox-map-design/ckhqrf2tz0dt119ny6azh975y', // style URL
+    container: 'map',
+    style: 'mapbox://styles/mapbox-map-design/ckhqrf2tz0dt119ny6azh975y',
     pitch: 75,
     bearing: 80,
-    center: [long, lat], // starting position [lng, lat]
-    zoom: 14 // starting zoom
+    center: [long, lat],
+    zoom: 14
     
     });
   map.on('load', function () {
@@ -148,10 +140,8 @@ function createMap(lat, long) {
     'tileSize': 512,
     'maxzoom': 14
     });
-    // add the DEM source as a terrain layer with exaggerated height
     map.setTerrain({ 'source': 'mapbox-dem', 'exaggeration': 1.5 });
       
-    // add a sky layer that will show when the map is highly pitched
     map.addLayer({
     'id': 'sky',
     'type': 'sky',

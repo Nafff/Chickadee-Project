@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   height: 100vh;
   overflow: auto;
 }
@@ -26,7 +27,7 @@ header {
   margin-top: 200px;
   text-align: center;
   color: #394955;
-  font-family: 'MedievalSharp', cursive;
+  font-family: "MedievalSharp", cursive;
   font-size: 26px;
 }
 
@@ -36,14 +37,14 @@ header {
 
 form {
   margin-bottom: 25px;
-  font-family: 'MedievalSharp', cursive;
+  font-family: "MedievalSharp", cursive;
   font-size: 28px;
   color: #394955;
 }
 
 #environment {
-  font-family: 'MedievalSharp', cursive;
-  background-color: #2A5774;
+  font-family: "MedievalSharp", cursive;
+  background-color: #2a5774;
   color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
@@ -52,8 +53,8 @@ form {
 }
 
 #environment:hover {
-  font-family: 'MedievalSharp', cursive;
-  background-color: #2A5774;
+  font-family: "MedievalSharp", cursive;
+  background-color: #2a5774;
   color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
@@ -62,8 +63,8 @@ form {
 }
 
 #environmentButton {
-  font-family: 'MedievalSharp', cursive;
-  background-color: #2A5774;
+  font-family: "MedievalSharp", cursive;
+  background-color: #2a5774;
   color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
@@ -72,8 +73,8 @@ form {
 }
 
 #environmentButton:hover {
-  font-family: 'MedievalSharp', cursive;
-  background-color: #2A5774;
+  font-family: "MedievalSharp", cursive;
+  background-color: #2a5774;
   color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
@@ -99,26 +100,23 @@ ul {
   align-items: center;
   border: 10px solid transparent;
   padding: 35px;
-  border-image: url("https://res.cloudinary.com/dy6xpqkkj/image/upload/v1628019942/Screen_Shot_2021-08-03_at_3.44.40_PM_ncs8k8.png") 100 round;
+  border-image: url("https://res.cloudinary.com/dy6xpqkkj/image/upload/v1628019942/Screen_Shot_2021-08-03_at_3.44.40_PM_ncs8k8.png")
+    100 round;
 }
 
 .formMapContainer {
   order: 0;
-  /* flex: 1 1 auto; */
   flex: 1 1 50%;
   align-self: auto;
 }
 
 .monsterContainer {
   order: 0;
-  /* flex: 1 1 auto; */
   flex: 1 1 50%;
   align-self: auto;
 }
 
 .map {
-  /* border: 1px solid black; */
-  /* max-width: 100%; */
   height: 410px;
   border-radius: 3%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -127,7 +125,6 @@ ul {
 }
 
 .monsters {
-  /* border: 1px solid black; */
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -135,12 +132,9 @@ ul {
 
 .monsterCard {
   border: 5px solid black;
-  background-color: #2A5774;
+  background-color: #2a5774;
   color: white;
-  font-family: 'MedievalSharp', cursive;
-  /* padding: 10px 15px 190px 15px; */
-  /* Playing around with flex (aiming to keep item same size) */
-  /* flex: 0 0 25%; */
+  font-family: "MedievalSharp", cursive;
   margin: 25px;
   flex-wrap: wrap;
   height: 200px;
@@ -152,12 +146,9 @@ ul {
 
 .monsterPlaceholderCard {
   border: 5px solid black;
-  background-color: #2A5774;
+  background-color: #2a5774;
   color: white;
-  font-family: 'MedievalSharp', cursive;
-  /* padding: 10px 15px 190px 15px; */
-  /* Playing around with flex (aiming to keep item same size) */
-  /* flex: 0 0 25%; */
+  font-family: "MedievalSharp", cursive;
   margin: 25px;
   flex-wrap: wrap;
   height: 200px;
@@ -167,15 +158,15 @@ ul {
   border-radius: 5px;
 }
 
-.monsterImageDiv{
-  height: 65%
+.monsterImageDiv {
+  height: 65%;
 }
-.monsterTextDiv{
-  height: 10%
+.monsterTextDiv {
+  height: 10%;
 }
 .monsterP {
- bottom: 0px;
- height: 5%; 
+  bottom: 0px;
+  height: 5%;
 }
 
 .monsterCardImg {
@@ -197,34 +188,31 @@ footer {
   z-index: 10;
   color: #f2ae43;
   font-size: 14px;
-  font-family: 'Arial Rounded MT Bold';
+  font-family: "Arial Rounded MT Bold";
 }
 
-/* Modal from W3 schools */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  display: none;
+  position: fixed;
+  z-index: 1;
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
-/* Modal Content/Box from W3 schools */
 .modal-content {
-  /* background-color: #fefefe; */
-  margin: 25% auto; /* 25% from the top and centered */
+  margin: 25% auto;
   padding: 20px;
   border: 10px solid black;
   width: 30%;
   border-radius: 10%;
-  /* styling below */
-  background-color: #2A5774;
+  background-color: #2a5774;
   color: white;
+  font-family: "MedievalSharp", cursive;
 }
 
 #modalList {
@@ -255,15 +243,16 @@ footer {
 }
 
 .link-logo {
-  filter: invert(67%) sepia(53%) saturate(627%) hue-rotate(356deg) brightness(98%) contrast(94%);
+  filter: invert(67%) sepia(53%) saturate(627%) hue-rotate(356deg)
+    brightness(98%) contrast(94%);
   width: 30px;
 }
 
 .link-logo:hover {
-  filter: invert(67%) sepia(53%) saturate(627%) hue-rotate(356deg) brightness(98%) contrast(94%);
+  filter: invert(67%) sepia(53%) saturate(627%) hue-rotate(356deg)
+    brightness(98%) contrast(94%);
   width: 40px;
 }
-
 
 @media screen and (max-width: 320px) {
   header {
@@ -278,7 +267,7 @@ footer {
   }
   .flexContainer {
     margin: 10px 5px 0px 5px;
-    padding: 35px;
+    padding: 10px;
   }
   .map {
     height: 280px;
@@ -313,7 +302,7 @@ footer {
     padding-right: 50px;
   }
   .modal-content {
-    margin: 50% auto; /* 25% from the top and centered */
+    margin: 50% auto;
     width: 80%;
   }
 }
@@ -328,7 +317,7 @@ footer {
   }
   .flexContainer {
     margin: 10px 5px 0px 5px;
-    padding: 35px;
+    padding: 10px;
   }
   .map {
     height: 280px;
@@ -363,12 +352,12 @@ footer {
     padding-right: 50px;
   }
   .modal-content {
-    margin: 50% auto; /* 25% from the top and centered */
+    margin: 50% auto;
     width: 80%;
   }
 }
 
-@media screen and (max-width: 900px) {
+/* @media screen and (max-width: 900px) {
   header {
     height: 100px;
   }
@@ -413,7 +402,7 @@ footer {
     padding-right: 50px;
   }
   .modal-content {
-    margin: 50% auto; /* 25% from the top and centered */
+    margin: 50% auto;
     width: 80%;
   }
 }
@@ -444,7 +433,7 @@ footer {
     margin-right: 45px;
   }
   .modal-content {
-    margin: 50% auto; /* 25% from the top and centered */
+    margin: 50% auto;
     width: 80%;
   }
 }
@@ -475,7 +464,7 @@ footer {
     margin-right: 45px;
   }
   .modal-content {
-    margin: 50% auto; /* 25% from the top and centered */
+    margin: 50% auto;
     width: 80%;
   }
-}
+} */
