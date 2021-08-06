@@ -16,7 +16,6 @@ header {
   background-color: grey;
   width: 100vw;
   height: 200px;
-  /* padding: 15px; */
   margin-right: 0;
   margin-top: 0;
   position: absolute;
@@ -27,6 +26,7 @@ header {
   text-align: center;
   color: #394955;
   font-family: 'MedievalSharp', cursive;
+  font-size: 26px;
 }
 
 .torchImg {
@@ -34,10 +34,10 @@ header {
 }
 
 form {
-  /* border: 1px solid black; */
-  margin-bottom: 10px;
+  margin-bottom: 25px;
   font-family: 'MedievalSharp', cursive;
-  font-size: 18px;
+  font-size: 28px;
+  color: #394955;
 }
 
 #environment {
@@ -47,6 +47,17 @@ form {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 5px;
+  font-size: 18px;
+}
+
+#environment:hover {
+  font-family: 'MedievalSharp', cursive;
+  background-color: #2A5774;
+  color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  font-size: 24px;
 }
 
 #environmentButton {
@@ -56,6 +67,17 @@ form {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 5px;
+  font-size: 18px;
+}
+
+#environmentButton:hover {
+  font-family: 'MedievalSharp', cursive;
+  background-color: #2A5774;
+  color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  font-size: 24px;
 }
 
 ul {
@@ -96,7 +118,11 @@ ul {
 .map {
   /* border: 1px solid black; */
   /* max-width: 100%; */
+  height: 410px;
   border-radius: 3%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
 }
 
 .monsters {
@@ -138,7 +164,7 @@ ul {
 .monsterCardImg {
   width: 100%;
   height: 90%;
-  border-radius: 5%;
+  border-radius: 5px, 5px, 0px, 0px;
   top: 0;
 }
 
@@ -146,12 +172,15 @@ footer {
   background-image: url("https://res.cloudinary.com/dy6xpqkkj/image/upload/v1628048236/Screen_Shot_2021-08-03_at_11.36.14_PM_wvndgl.png");
   background-size: contain;
   background-color: grey;
+  height: 50px;
   width: 100vw;
   position: absolute;
   bottom: 0;
-  /* margin-bottom: -25px; */
   right: 0;
   z-index: 10;
+  color: #f2ae43;
+  font-size: 14px;
+  font-family: 'Arial Rounded MT Bold';
 }
 
 /* Modal from W3 schools */
@@ -187,7 +216,7 @@ footer {
 
 .leftSprite {
   position: fixed;
-  bottom: 100px;
+  bottom: 60px;
   /* margin-left: 100px; */
   margin-left: 2%;
 }
@@ -199,9 +228,23 @@ footer {
   margin-left: 47%;
 }
 
+.middleSprite:hover {
+  transform: scale(1.5);
+}
+
 .rightSprite {
   position: fixed;
   bottom: 40px;
   /* margin-left: 1100px; */
   margin-left: 70%;
+}
+
+.link-logo {
+  filter: invert(67%) sepia(53%) saturate(627%) hue-rotate(356deg) brightness(98%) contrast(94%);
+  width: 30px;
+}
+
+.link-logo:hover {
+  filter: invert(67%) sepia(53%) saturate(627%) hue-rotate(356deg) brightness(98%) contrast(94%);
+  width: 40px;
 }

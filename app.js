@@ -2,25 +2,33 @@ jungleMonsters = {
   "tribal-warrior": "https://media-waterdeep.cursecdn.com/attachments/2/656/humanoid.jpg",
   "kobold": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/379/233/315/636252780450300625.jpeg",
   "constrictor-snake": "https://media-waterdeep.cursecdn.com/attachments/2/648/beast.jpg",
-  "giant-boar": "https://media-waterdeep.cursecdn.com/attachments/2/648/beast.jpg"
+  "giant-boar": "https://media-waterdeep.cursecdn.com/attachments/2/648/beast.jpg",
+  "tyrannosaurus-rex": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/16/594/264/315/636376369004412963.jpeg",
+  "lizardfolk" : "https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/233/346/315/636252766314905259.jpeg"
 };
 desertMonsters = {
   "bandit": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/181/259/315/636252761965117015.jpeg",
   "mummy": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/225/201/315/636252765553048566.jpeg",
   "weretiger-tiger": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/76/255/315/636252734783831163.jpeg",
-  "giant-vulture": "https://media-waterdeep.cursecdn.com/attachments/2/648/beast.jpg"
+  "giant-vulture": "https://media-waterdeep.cursecdn.com/attachments/2/648/beast.jpg",
+  "dust-mephit": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/313/268/315/636252772213922157.jpeg",
+  "hyena" : "https://media-waterdeep.cursecdn.com/avatars/thumbnails/9/902/408/315/636334288674955736.jpeg"
 };
 grasslandMonsters = {
   "blood-hawk": "https://media-waterdeep.cursecdn.com/attachments/2/648/beast.jpg",
   "panther": "https://media-waterdeep.cursecdn.com/attachments/2/648/beast.jpg",
   "orc": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/301/256/315/636252771691385727.jpeg",
-  "bugbear": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/221/255/315/636252765234633232.jpeg"
+  "bugbear": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/221/255/315/636252765234633232.jpeg",
+  "griffon": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/373/288/315/636252779693862725.jpeg",
+  "manticore": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/187/402/315/636252762623266809.jpeg"
 };
 forestMonsters = {
   "awakened-shrub": "https://media-waterdeep.cursecdn.com/attachments/2/659/plant.jpg",
   "giant-wolf-spider": "https://media-waterdeep.cursecdn.com/attachments/2/648/beast.jpg",
   "goblin": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/351/218/315/636252777818652432.jpeg",
-  "centaur": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/227/405/315/636252765573266420.jpeg"
+  "centaur": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/227/405/315/636252765573266420.jpeg",
+  "dryad": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/307/252/315/636252771953950206.jpeg",
+  "treant": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/97/237/315/636252740537990664.jpeg"
 };
 
 desertMaps = ['11.288452', '23.806078']

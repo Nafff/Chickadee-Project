@@ -19,7 +19,7 @@
     <header>
     </header>
     <div class="introText">
-      <h1><img class="torchImg" src="https://opengameart.org/sites/default/files/Torch_Gif.gif" alt="test gif">Dungeonspiration<img class="torchImg" src="https://opengameart.org/sites/default/files/Torch_Gif.gif" alt="test gif"></h1>
+      <h1 style="padding-top: 40px;"><img class="torchImg" src="https://opengameart.org/sites/default/files/Torch_Gif.gif" alt="test gif">Dungeonspiration<img class="torchImg" src="https://opengameart.org/sites/default/files/Torch_Gif.gif" alt="test gif"></h1>
     </div>
     <div class="flexContainer">
       <div class="formMapContainer">
@@ -34,11 +34,15 @@
           <button id="environmentButton">Get Inspired</button>
         </form>
         <div class="map" id="map">
-          <p>Map Here</p>
-          <img
-            src="https://www.mapsinternational.com/pub/media/catalog/product/cache/4d506f310d873d4f29c897e0076bed55/s/a/satellite-map-of-the-world_wm00875.jpg"
-            alt="test image" class="testImage"
-          />
+          <script>
+            mapboxgl.accessToken = 'pk.eyJ1IjoiY296aWVyIiwiYSI6ImNrcnRyZXVyajE3YTYycG85N3g1dnZ0MTUifQ.w_Rsxac2Up_pymg5wQ1TnQ';
+            const map = new mapboxgl.Map({
+            container: 'map', // container ID
+            style: 'mapbox://styles/mapbox/satellite-v9', // style URL
+            center: [137.9150899566626, 36.25956997955441], // starting position [lng, lat]
+            zoom: 0 // starting zoom
+          });
+          </script>
         </div>
       </div>
       <div class="monsterContainer">
@@ -58,7 +62,9 @@
       <img src="https://res.cloudinary.com/dy6xpqkkj/image/upload/v1628195936/blackdragon_xywq6d.gif" alt="">
     </div>
     <div class='middleSprite'>
-      <img width='100px' src="https://opengameart.org/sites/default/files/styles/medium/public/treasures.png" alt="">
+      <a href="https://github.com/Nafff"><img class="link-logo" src="https://res.cloudinary.com/briandanger/image/upload/v1568954107/github_fpykxh.png" alt="github"></a>
+      <a href="https://www.linkedin.com/in/jacob-adick-3388b3123/"><img class="link-logo" src="https://res.cloudinary.com/briandanger/image/upload/v1568954107/linkedin_vnvo6s.png" alt="linkedin">
+      <div><img width='100px' src="https://opengameart.org/sites/default/files/styles/medium/public/treasures.png" alt=""></div>
     </div>
     <div class='rightSprite'>
       <img src="https://res.cloudinary.com/dy6xpqkkj/image/upload/v1628195936/ddsom_charsprite10_h9tnbc.gif" alt="">
@@ -66,7 +72,7 @@
       <img src="https://res.cloudinary.com/dy6xpqkkj/image/upload/v1628195936/ddsom_charsprite08_g6ejnk.gif" alt="">
     </div>
     <footer>
-      <p>Jake Adick</p>
+      <p style="margin-bottom: 0px;margin-top: 16px;">© Jake Adick 2021</p>
     </footer>
   </body>
 </html>
