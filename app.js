@@ -83,7 +83,7 @@ async function getMonsters(monster, image) {
     monsterImageDiv.className = "monsterImageDiv"
     // testing inner text span changes
     // monsterDiv.innerHTML = `<span class="nameSpan">${data.data.name}</span>`;
-    monsterTextDiv.innerHTML = `<p>${data.data.name}</p>`
+    monsterTextDiv.innerHTML = `<p class="monsterP">${data.data.name}</p>`
     monsterImageDiv.innerHTML = `<img class="monsterCardImg" src=${image} alt=${data.data.name} image"></img>`
     monsterDiv.appendChild(monsterImageDiv)
     monsterDiv.appendChild(monsterTextDiv)
