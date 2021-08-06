@@ -158,4 +158,20 @@ async function getMonsters(monster, image) {
 ```
 
 ## Change Log
- Use this section to document what changes were made and the reasoning behind those changes.  
+|August 2| Added base HTML and linked DnD5e API
+|August 2| Added initial API functionality
+|August 2| Started basic styling
+|August 2| Added modal window
+|August 3| Changed HTML elements
+|August 3| Set up initial flexbox elements
+|August 3| Adjusted monster card elements
+|August 3| Added data to modal
+|August 4| Styling adjustments
+|August 5| Styling adjustments
+|August 5| Div adjustments
+|August 5| Card styling functionality
+|August 5| Refactoring JavaScript
+|August 5| Adding Map Functionality
+|August 5| Fixed Map Positioning
+|August 5| Added placeholders for cards and map
+|August 5| Added Media Queries
