@@ -19,6 +19,7 @@ header {
   margin-right: 0;
   margin-top: 0;
   position: absolute;
+  z-index: 10;
 }
 
 .introText {
@@ -230,18 +231,19 @@ footer {
   padding-right: 30px;
 }
 
+.spriteDiv {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  margin-bottom: 40px;
+}
+
 .leftSprite {
-  position: fixed;
-  bottom: 60px;
-  /* margin-left: 100px; */
-  margin-left: 2%;
+  bottom: 40px;
 }
 
 .middleSprite {
-  position: fixed;
-  bottom: 40px;
-  /* margin-left: 668px; */
-  margin-left: 47%;
+  padding-top: 115px;
 }
 
 .middleSprite:hover {
@@ -249,10 +251,7 @@ footer {
 }
 
 .rightSprite {
-  position: fixed;
-  bottom: 40px;
-  /* margin-left: 1100px; */
-  margin-left: 70%;
+  padding-top: 145px;
 }
 
 .link-logo {
@@ -263,4 +262,220 @@ footer {
 .link-logo:hover {
   filter: invert(67%) sepia(53%) saturate(627%) hue-rotate(356deg) brightness(98%) contrast(94%);
   width: 40px;
+}
+
+
+@media screen and (max-width: 320px) {
+  header {
+    height: 100px;
+  }
+  .introText {
+    margin-top: 60px;
+    font-size: 14px;
+  }
+  .torchImg {
+    width: 20px;
+  }
+  .flexContainer {
+    margin: 10px 5px 0px 5px;
+    padding: 35px;
+  }
+  .map {
+    height: 280px;
+  }
+  .monsterCard {
+    margin: 5px;
+    width: 40%;
+  }
+  .monsterPlaceholderCard {
+    margin: 5px;
+    width: 40%;
+  }
+  .spriteDiv {
+    grid-gap: 0px;
+  }
+  .leftSprite img {
+    height: 100px;
+    padding-top: 80px;
+  }
+  .middleSprite {
+    height: 70px;
+    padding-right: 20px;
+  }
+  .spriteTwo {
+    display: none;
+  }
+  .spriteThree {
+    display: none;
+  }
+  .rightSprite img {
+    height: 70px;
+    padding-right: 50px;
+  }
+  .modal-content {
+    margin: 50% auto; /* 25% from the top and centered */
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    height: 100px;
+  }
+  .introText {
+    margin-top: 60px;
+    font-size: 16px;
+  }
+  .flexContainer {
+    margin: 10px 5px 0px 5px;
+    padding: 35px;
+  }
+  .map {
+    height: 280px;
+  }
+  .monsterCard {
+    margin: 5px;
+    width: 40%;
+  }
+  .monsterPlaceholderCard {
+    margin: 5px;
+    width: 40%;
+  }
+  .spriteDiv {
+    grid-gap: 0px;
+  }
+  .leftSprite img {
+    height: 100px;
+    padding-top: 80px;
+  }
+  .middleSprite {
+    height: 70px;
+    padding-right: 20px;
+  }
+  .spriteTwo {
+    display: none;
+  }
+  .spriteThree {
+    display: none;
+  }
+  .rightSprite img {
+    height: 70px;
+    padding-right: 50px;
+  }
+  .modal-content {
+    margin: 50% auto; /* 25% from the top and centered */
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  header {
+    height: 100px;
+  }
+  .introText {
+    margin-top: 60px;
+    font-size: 16px;
+  }
+  .flexContainer {
+    margin: 10px 5px 0px 5px;
+    padding: 35px;
+  }
+  .map {
+    height: 280px;
+  }
+  .monsterCard {
+    margin: 5px;
+    width: 40%;
+  }
+  .monsterPlaceholderCard {
+    margin: 5px;
+    width: 40%;
+  }
+  .spriteDiv {
+    grid-gap: 0px;
+  }
+  .leftSprite img {
+    height: 100px;
+    padding-top: 80px;
+  }
+  .middleSprite {
+    height: 70px;
+    padding-right: 20px;
+  }
+  .spriteTwo {
+    display: none;
+  }
+  .spriteThree {
+    display: none;
+  }
+  .rightSprite img {
+    height: 70px;
+    padding-right: 50px;
+  }
+  .modal-content {
+    margin: 50% auto; /* 25% from the top and centered */
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .flexContainer {
+    margin: 10px 5px 0px 5px;
+    padding: 35px;
+  }
+  .monsterCard {
+    margin: 5px;
+    width: 25%;
+  }
+  .monsterPlaceholderCard {
+    margin: 5px;
+    width: 25%;
+  }
+  .leftSprite img {
+    padding-top: 140px;
+    margin-right: 60px;
+  }
+  .middleSprite {
+    padding-right: 60px;
+    padding-top: 270px;
+  }
+  .rightSprite img {
+    padding-top: 165px;
+    margin-right: 45px;
+  }
+  .modal-content {
+    margin: 50% auto; /* 25% from the top and centered */
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .flexContainer {
+    margin: 10px 5px 0px 5px;
+    padding: 35px;
+  }
+  .monsterCard {
+    margin: 5px;
+    width: 25%;
+  }
+  .monsterPlaceholderCard {
+    margin: 5px;
+    width: 25%;
+  }
+  .leftSprite img {
+    padding-top: 140px;
+    margin-right: 60px;
+  }
+  .middleSprite {
+    padding-right: 60px;
+    padding-top: 270px;
+  }
+  .rightSprite img {
+    padding-top: 165px;
+    margin-right: 45px;
+  }
+  .modal-content {
+    margin: 50% auto; /* 25% from the top and centered */
+    width: 80%;
+  }
 }
